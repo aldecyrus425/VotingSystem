@@ -46,5 +46,35 @@ namespace MyApp.Domain.Entities
             Role = role;
             CreatedAt = DateTime.UtcNow;
         }
+
+        public void UpdateUser(string firstName, string? middleName, string lastName, string email, UserRole role)
+        {
+            if (string.IsNullOrWhiteSpace(firstName))
+                throw new ArgumentException("First name is required.");
+
+            if (string.IsNullOrWhiteSpace(lastName))
+                throw new ArgumentException("Last name is required.");
+
+            if (string.IsNullOrWhiteSpace(email))
+                throw new ArgumentException("Email address is required.");
+
+
+            if (!Enum.IsDefined(typeof(UserRole), role))
+                throw new ArgumentException("Invalid user role");
+
+            FirstName = firstName;
+            MiddleName = middleName;
+            LastName = lastName;
+            Email = email;
+            Role = role;
+            CreatedAt = DateTime.UtcNow;
+        }
+        public void UpdatePassword(string password)
+        {
+            if (string.IsNullOrWhiteSpace(password))
+                throw new ArgumentException("Password is required.");
+
+            HashPassword = password;
+        }
     }
 }

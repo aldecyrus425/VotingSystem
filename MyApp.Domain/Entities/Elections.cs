@@ -13,7 +13,8 @@ namespace MyApp.Domain.Entities
         public DateTime StartDate { get; private set; }
         public DateTime EndDate { get; private set; }
         public bool isActive { get; private set; }
-        public int CreatedBy { get; private set; } // (FK → Users.UserId)
+        public int CreatedBy { get; private set; }
+        public User User { get; set; }
         public DateTime CreatedAt { get; private set; }
 
         protected Elections() { }
@@ -43,6 +44,20 @@ namespace MyApp.Domain.Entities
             this.isActive = isActive;
             CreatedBy = createdBy;
             CreatedAt = DateTime.UtcNow;
+        }
+
+        public void ActivateElection()
+        {
+            if (DateTime.UtcNow < StartDate)
+                throw new InvalidOperationException("Election has not started yet.");
+
+            if (DateTime.UtcNow > EndDate)
+                throw new InvalidOperationException("Election already ended.");
+
+            if (isActive)
+                throw new InvalidOperationException("Election is already active.");
+
+            isActive = true;
         }
 
 
