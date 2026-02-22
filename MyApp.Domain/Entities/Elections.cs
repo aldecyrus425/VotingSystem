@@ -19,7 +19,7 @@ namespace MyApp.Domain.Entities
 
         protected Elections() { }
 
-        public Elections( string title, DateTime startDate, DateTime endDate, bool isActive, int createdBy)
+        public Elections( string title, DateTime startDate, DateTime endDate, int createdBy)
         {
 
             if(string.IsNullOrWhiteSpace(title))
@@ -41,8 +41,30 @@ namespace MyApp.Domain.Entities
             Title = title;
             StartDate = startDate;
             EndDate = endDate;
-            this.isActive = isActive;
+            this.isActive = false;
             CreatedBy = createdBy;
+            CreatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateElection(string title, DateTime startDate, DateTime endDate)
+        {
+
+            if (string.IsNullOrWhiteSpace(title))
+                throw new ArgumentNullException("Title is required.");
+
+            if (startDate > endDate)
+                throw new ArgumentException("Start date cannot be after end date.");
+
+            if (endDate < startDate)
+                throw new ArgumentException("End date cannot be before start date.");
+
+            if (startDate < DateTime.UtcNow)
+                throw new ArgumentException("Start date cannot be in the past.");
+
+
+            Title = title;
+            StartDate = startDate;
+            EndDate = endDate;
             CreatedAt = DateTime.UtcNow;
         }
 
