@@ -17,6 +17,12 @@ namespace MyApp.Application.DTO
         public int MinVoteAllowed { get; set; }
     }
 
+    public class ShowPositionDTO
+    {
+        public int PositionId { get; set; }
+        public string Name { get; set; }
+    }
+
     public class  AddPositionDTO 
     {
         public int ElectionId { get; set; }
