@@ -30,6 +30,10 @@ namespace MyApp.Infrastructure
             service.AddScoped<IPositionServices, PositionsServices>();
 
             service.AddScoped<IElectionRepository, ElectionRepository>();
+            service.AddScoped<IElectionServices, ElectionServices>();
+
+            service.AddScoped<ICandidateRepository, CandidateRepository>();
+            service.AddScoped<ICandidateServices, CandidateServices>();
 
 
 
