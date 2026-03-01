@@ -10,3 +10,4 @@ C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Domain\obj\Debug
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Domain\obj\Debug\net9.0\refint\MyApp.Domain.dll
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.pdb
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Domain\obj\Debug\net9.0\ref\MyApp.Domain.dll
+C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Domain\obj\Debug\net9.0\MyApp.Domain.sourcelink.json

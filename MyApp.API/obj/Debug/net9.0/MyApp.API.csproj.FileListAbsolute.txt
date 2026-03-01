@@ -159,3 +159,5 @@ C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.API\obj\Debug\ne
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.API\obj\Debug\net9.0\MyApp.API.pdb
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.API\obj\Debug\net9.0\MyApp.API.genruntimeconfig.cache
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.API\obj\Debug\net9.0\ref\MyApp.API.dll
+C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.API\obj\Debug\net9.0\MyApp.API.sourcelink.json
+C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.API\bin\Debug\net9.0\BCrypt.Net-Next.dll

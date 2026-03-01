@@ -15,3 +15,4 @@ C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Infrastructure\o
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Infrastructure\obj\Debug\net9.0\refint\MyApp.Infrastructure.dll
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.pdb
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Infrastructure\obj\Debug\net9.0\ref\MyApp.Infrastructure.dll
+C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Infrastructure\obj\Debug\net9.0\MyApp.Infrastructure.sourcelink.json

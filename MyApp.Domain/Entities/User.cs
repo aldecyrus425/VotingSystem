@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,7 @@ namespace MyApp.Domain.Entities
         public string Email { get; private set; }
         public string HashPassword { get; private set; }
         public UserRole Role { get; private set; }
+        public bool isVoted { get; set; } = false;
 
         public DateTime CreatedAt { get; private set; }
 
@@ -45,6 +47,14 @@ namespace MyApp.Domain.Entities
             HashPassword = hashPassword;
             Role = role;
             CreatedAt = DateTime.UtcNow;
+        }
+
+        public void MarkAsVoted()
+        {
+            if (isVoted)
+                throw new ArgumentException("User already voted.");
+
+            isVoted = true;
         }
 
         public void UpdateUser(string firstName, string? middleName, string lastName, string email, UserRole role)

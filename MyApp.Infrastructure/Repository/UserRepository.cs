@@ -56,6 +56,12 @@ namespace MyApp.Infrastructure.Repository
             return user;
         }
 
+        public async Task<bool> isAlreadyVotedAsync(int id)
+        {
+            return await _context.Users
+                .AnyAsync(u => u.UserId == id && u.isVoted);
+        }
+
         public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();

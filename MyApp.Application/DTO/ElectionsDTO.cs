@@ -19,6 +19,7 @@ namespace MyApp.Application.DTO
         public DateTime CreatedAt { get; set; }
     }
 
+
     public class AddElectionsDTO
     {
         public string Title { get; set; }

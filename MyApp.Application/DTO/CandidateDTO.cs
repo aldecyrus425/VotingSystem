@@ -16,6 +16,12 @@ namespace MyApp.Application.DTO
         public string Description { get; set; }
     }
 
+    public class ShowCandidateDTO
+    {
+        public int CandidateId { get; set; }
+        public string DisplayName { get; set; }
+    }
+
     public class AddCandidate
     {
         public int PositionID { get; set; }

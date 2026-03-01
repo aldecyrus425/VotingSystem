@@ -13,3 +13,4 @@ C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Application\obj\
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Application\obj\Debug\net9.0\refint\MyApp.Application.dll
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Application\obj\Debug\net9.0\MyApp.Application.pdb
 C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Application\obj\Debug\net9.0\ref\MyApp.Application.dll
+C:\Users\aldec\source\repos\AttendanceSystem\VotingSystem\MyApp.Application\obj\Debug\net9.0\MyApp.Application.sourcelink.json

@@ -16,5 +16,6 @@ namespace MyApp.Domain.Persistence
         public DbSet<Positions> Positions { get; set; }
         public DbSet<Elections> Elections { get; set; }
         public DbSet<Candidates> Candidates { get; set; }
+        public DbSet<Votes> Votes { get; set; }
     }
 }

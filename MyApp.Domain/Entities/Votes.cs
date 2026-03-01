@@ -10,9 +10,17 @@ namespace MyApp.Domain.Entities
     {
         public int VoteId { get; set; }
         public int ElectionId { get; set; }  // (FK → Elections.ElectionId)
+        public Elections Elections { get; set; }
+
         public int PositionId { get; set; } // (FK → Positions.PositionId)
+        public Positions Positions { get; set; }
+
         public int CandidateId { get; set; } // (FK → Candidates.CandidateId)
+        public Candidates Candidates { get; set; }
+
         public int VoterId { get; set; } // (FK → Users.UserId)
+        public User User { get; set; }
+
         public DateTime VotedAt { get; set; }
 
         protected Votes() { }
